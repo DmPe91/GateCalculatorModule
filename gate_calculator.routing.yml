@@ -1,0 +1,7 @@
+gate_calculator.form:
+  path: "/calculator"
+  defaults:
+    _title: "Калькулятор стоимости ворот"
+    _form: '\Drupal\gate_calculator\Form\GateCalculatorForm'
+  requirements:
+    _permission: "access content"

@@ -1,0 +1,12 @@
+form_styles:
+  version: 1.0
+  css:
+    theme:
+      css/gate-calculator-form.css: {}
+  js:
+    js/gate-calculator-form.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/drupal.dialog.ajax # ← ПРАВИЛЬНОЕ название!
+    - core/drupalSettings

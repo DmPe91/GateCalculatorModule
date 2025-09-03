@@ -1,0 +1,298 @@
+.gate-calculator-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.gate-calculator-fields {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  row-gap: 25px;
+}
+
+.gate-calculator-fields .form-item {
+  width: 270px;
+}
+
+.gate-calculator-fields .form-item label {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.gate-calculator-fields .form-item input {
+  height: 47px;
+}
+
+.gate-calculator-fields .form-item select {
+  height: 47px;
+  border-radius: 5px;
+}
+
+.gate-calculator-image {
+  flex: 1;
+  min-width: 371px;
+  text-align: center;
+}
+
+.gate-calculator-image img {
+  max-width: 100%;
+  height: 138px !important;
+  object-fit: cover;
+  margin-bottom: 50px;
+}
+
+#edit-tip-vorot--wrapper legend {
+  display: none;
+}
+
+#edit-tip-vorot {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  row-gap: 15px;
+}
+
+#edit-tip-vorot input {
+  appearance: none;
+  width: 21px;
+  height: 21px;
+  border-radius: 3px;
+  border: 1px solid black;
+  position: relative;
+}
+
+#edit-tip-vorot input:checked {
+  border: 1px solid #005620;
+  background: #005620;
+}
+
+#edit-tip-vorot input:checked::after {
+  content: "✓";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.form-item-tip-vorot {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: 170px;
+}
+
+.form-item-tip-vorot label {
+  font-size: 14px;
+}
+
+.form-item-tip-vorot .ajax-progress {
+  display: none;
+}
+
+.gate-calculator-price {
+  margin-top: 20px;
+}
+
+.calculated-price {
+  text-align: left;
+  font-weight: bold;
+  color: black;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.price-disclaimer {
+  font-size: 12px;
+  color: #757575;
+  text-align: left;
+}
+
+/* Стили для полей с кнопками +/- */
+.number-input-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.number-input-wrapper .ajax-progress {
+  display: none;
+}
+
+.number-input-wrapper input {
+  width: 100%;
+  text-align: center;
+  flex: 2;
+  order: 2;
+}
+
+.number-input-btn {
+  width: 47px;
+  height: 47px;
+  background: #005620;
+  border: 1px solid #005620;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.number-input-minus {
+  order: 3;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.number-input-plus {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.number-input-btn:hover {
+  background: white;
+  color: #005620;
+  border: 1px solid #005620;
+}
+
+/* Стиль для заблокированного поля */
+.form-disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.temporary-message {
+  background: #fff4e5;
+  border: 1px solid #ffb800;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+  color: #734c00;
+  animation: fadeInOut 3s ease-in-out;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.messages--warning {
+  background: #fff4e5;
+  border-color: #ffb800;
+  color: #734c00;
+}
+
+/* gate-calculator-form.css */
+.personal-info-hidden {
+  display: none;
+}
+
+.personal-info-visible {
+  display: block;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.personal-info-visible .form-item,
+.personal-info-visible button {
+  width: 47%;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.personal-info-visible label {
+  font-size: 14px;
+}
+
+.personal-info-visible button,
+.personal-info-visible input {
+  height: 47px;
+  border-radius: 5px;
+  margin: 0 !important;
+}
+
+.personal-info-visible input {
+  border: 1px solid black;
+  width: 100%;
+}
+
+.form-fields-disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.button-hidden {
+  display: none !important;
+}
+
+.order-submit-button,
+.continue-calculation-button {
+  margin-top: 15px;
+  margin-right: 10px;
+}
+
+.form-actions {
+  margin-top: 30px;
+  display: flex;
+  gap: 30px;
+}
+
+.form-actions button {
+  width: 100%;
+  height: 47px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.order-button,
+.continue-calculation-button {
+  background: white !important;
+  color: black !important;
+  border: 1px solid #005620 !important;
+}
+
+.order-button:hover,
+.continue-calculation-button:hover {
+  background: #005620 !important;
+  color: white !important;
+}
+
+.calculate-button,
+.order-submit-button {
+  background: #005620 !important;
+  border: 1px solid #005620 !important;
+  color: white;
+}
+
+.calculate-button:hover,
+.order-submit-button:hover {
+  background: white !important;
+  color: black !important;
+}
+
+.gate-calculator-fields {
+  flex: 2;
+}
